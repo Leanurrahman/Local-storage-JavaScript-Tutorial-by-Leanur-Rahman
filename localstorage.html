@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text-center justify-center p-6 ">
+        <h1 class="underline p-2 py-2 font-bold">What is local storage ?🤔</h1>
+        <h2 class="border-2 border-black bg-amber-300">
+            Local Storage is a way to save small
+            pieces of data in the user's browser —
+            even after they close the tab or restart
+            their computer. It stays until you delete it
+        </h2>
+    </div>
+
+    <div class="text-center border-2 p-3 justify-center px-8">
+
+        <p class="bg-green-300">localStorage.setItem("key", "value")-> (Store data)</p>
+        <p class="bg-yellow-200">localStorage.getItem("key")-> (Read data)</p>
+        <p class="bg-green-200">localStorage.removeItem("Key")-> (Delete Data)</p>
+
+    </div>
+
+
+    <div class="text-center p-4">
+             <h2 class="font-bold border-b-2">Local Storage Demo</h2>
+        <div class="text-center justify-center text-black font-mono  flex gap-4 p-2 bg-green-400">
+            
+            <input id="nameInput" placeholder="Enter Your name" class=" border-2 border-black-300" type="text" id="username" />
+            <button id="addBtn" class="cursor-pointer border rounded-lg px-1 py-1 bg-red-500 text-white hover:bg-black" >Save data</button>
+            <button id="showBtn" class="cursor-pointer border rounded-lg px-1 py-1 bg-red-500 text-white hover:bg-black" >See names</button>
+            <button id="clearBtn" class="cursor-pointer border rounded-lg px-1 py-1 bg-red-500 text-white hover:bg-black" >Remove item</button>
+        </div>
+
+
+    </div>
+
+    <script src="storage.js"></script>
+</body>
+
+</html>
